@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pilot</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+        h1 {
+            top: 15%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, 0);
+            text-align: center;
+        }
+        
+        h1::after {
+            content: '';
+            background: #ff4d73;
+            display: block;
+            height: 3px;
+            width: 170px;
+            margin: 5px auto 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id='signin'>
+
+        <h1>Login</h1>
+        <form  method="post" action="/login" id="form">
+            {%if data == 2%}
+            <h4 style='color:red'>Wrong Password</h4>
+            {%endif%}
+            {%if data == 3%}
+            <h4 style='color:red'>Wrong username</h4>
+            {%endif%}
+            {%if data == 4%}
+            <h4 style='color:red'>Please Do Register</h4>
+            {%endif%}
+            <label>Email</label><br>
+            <input type="email" requried name="email" id="username" placeholder="Enter your Email"><br><br><br>
+            <label>Password</label><br>
+            <input type="password" requried name="password" id="passwd" placeholder="Password"><br><br><br>
+            <button type="submit" class='button'>Sign in</button>
+        </form>
+        <p>Don't have an account?<a href='/register'><button>Register</button></p>
+    </div>
+    <script>
+        let signin=document.getElementById('signin')
+        let register=document.getElementById('Register')
+        function Register(){
+            signin.style.display='none'
+            register.style.display='block'
+        }
+        function Signin(){
+            signin.style.display='block'
+            register.style.display='none'
+        }
+        function functions(){
+            alert("Need to login first")
+        }
+    </script>
+</body>
+
+</html>

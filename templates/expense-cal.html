@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
+    <title>Events</title>
+    <style>
+        #form input{
+            right:0%;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div id="side-menu">
+            <div id="logo-menu"><h1>SmartSpend</h1><h2>Money Management</h2></div>
+            <ul><li ><a  href="/" title="Home"><pre><img src="../static/images/home.png" alt=""> Home</pre></a></li></ul>
+        <ul><li ><a href="" title='Expense Tracker'> <pre><img src="../static/images/expenses.png" alt=""> Expenses Tracker</pre></a></li></ul>
+        <ul><li ><a href="" title="Financial Calculator"><pre><img src="../static/images/business.png" alt=""> Financial Calculators</pre></a></li></ul>                
+        <ul><li><a href="" title="Investment options"><pre><img src="../static/images/piggy.png" alt=""> Saving Schemes</pre></a></li></ul>
+        <ul><li id=active><a href="" title="Profile"><pre><img src="../static/images/account.png" alt=""> Profile</pre></a></li></ul>
+        </div>
+        <div id="logo-menu"><h1>SmartSpend</h1><h2>Money Management</h2></div>
+        <div id="events">
+            <h1>Your Information</h1>
+            <div id="form">
+                <form>
+                    <label><h2>Annual Income</h2></label><br><br>
+                    <input name='income' type=number reqiured value=0 min=0><br><br>
+                    <label><h3>Expences</h3></label><br><br>
+                    <label>Accommedation</label><br>
+                    <input name='expences' type=number reqiured value=0 min=0><br><br>
+                    <label>Transportation</label><br>
+                    <input name='expences' type=number reqiured value=0 min=0><br><br>
+                    <label>Utilities</label><br>
+                    <input name='expences' type=number reqiured value=0 min=0><br><br>
+                    <label>Groceries</label><br>
+                    <input name='expences' type=number reqiured value=0 min=0><br><br>
+                    <label>Medical</label><br>
+                    <input name='expences' type=number reqiured value=0 min=0><br><br>
+                    <label>Outside Food</label><br>
+                    <input name='expences' type=number reqiured value=0 min=0><br><br>
+                    <label>Shopping</label><br><br>
+                    <input name='expences' type=number reqiured value=0 min=0><br><br>
+                    <label>Insurance</label><br><br>
+                    <input name='expences' type=number reqiured value=0 min=0><br><br>
+                    <label>Child Education</label><br><br>
+                    <input name='expences' type=number reqiured value=0 min=0><br><br>
+                    <label>Shopping</label><br><br>
+                    <input name='expences' type=number reqiured value=0 min=0><br><br>
+                    <label>Miscellaneous</label><br><br>
+                    <input name='expences' type=number reqiured value=0 min=0><br><br>
+                    <div class="footer">
+                        <p><button>Submit</button></p>
+                </div>
+                </form>
+            </div>
+            </div>
+
+                </body>
+                </html>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    menu_ = document.getElementById('menu-icon')
+    nav_ = document.getElementById('menu-bar')
+    function open_(){
+        menu_.style.display='none'
+        nav_.style.display='inline'
+    }
+    function close_(){
+        menu_.style.display='block'
+        nav_.style.display='none'
+    }
+    
+</script>
+</html>

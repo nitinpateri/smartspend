@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pilot</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+        h1 {
+            top: 15%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, 0);
+            text-align: center;
+        }
+        
+        h1::after {
+            content: '';
+            background: #ff4d73;
+            display: block;
+            height: 3px;
+            width: 170px;
+            margin: 5px auto 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id='Register'>
+        <img id="logo" src='../static/images/text-logo.png'>
+        <h1>Register</h1>
+        <form action='/signup' method="post" id="form">
+            {%if data == 0%}
+            <h4 style='color:red'>username not avalible please try again</h4>
+            {%endif%}
+            <label>Email</label><br>
+            <input type="email" requried name="email" id="username" placeholder="Enter your Email"><br><br>
+            <label>Password</label><br>
+            <input type="password" requried name="password" id="passwd" placeholder="Create Password"><br><br><br>
+            <button type="submit" class='button' id='button'>Register</button>
+        </form>
+        <p> Do you have an account?<a href='/'><button>Sign in</button></a></p>
+    </div>
+
+    <script>
+        let signin=document.getElementById('signin')
+        let register=document.getElementById('Register')
+        function Register(){
+            signin.style.display='none'
+            register.style.display='block'
+        }
+        function Signin(){
+            signin.style.display='block'
+            register.style.display='none'
+        }
+        function functions(){
+            alert("Need to login first")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
+    <title>Events</title>
+    <style>
+        #form input{
+            right:0%;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div id="side-menu">
+            <div id="logo-menu"><h1>SmartSpend</h1><h2>Money Management</h2></div>
+            <ul><li ><a  href="/" title="Home"><pre><img src="../static/images/home.png" alt=""> Home</pre></a></li></ul>
+        <ul><li ><a href="" title='Expense Tracker'> <pre><img src="../static/images/expenses.png" alt=""> Expenses Tracker</pre></a></li></ul>
+        <ul><li ><a href="" title="Financial Calculator"><pre><img src="../static/images/business.png" alt=""> Financial Calculators</pre></a></li></ul>                
+        <ul><li><a href="" title="Investment options"><pre><img src="../static/images/piggy.png" alt=""> Saving Schemes</pre></a></li></ul>
+        <ul><li id=active><a href="" title="Profile"><pre><img src="../static/images/account.png" alt=""> Profile</pre></a></li></ul>
+        </div>
+        <div id="logo-menu"><h1>SmartSpend</h1><h2>Money Management</h2></div>
+        <div id="events">
+            <h1>Daily Expense Tracker</h1>
+            <div id="form">
+                <form method=post>
+                    <label>Date:</label><br><br>
+                    <input name='date' type=date><br><br>
+                    <label>Purpose:</label><br><br>
+                   <select name='purpose' required>
+                    <option>Purpose</option>
+                    <option value='accomodation'>Accommedation</option>
+                    <option value='transportation'>Transportation</option>
+                    <option value='utilities'>Utilities</option>
+                    <option vlaue='groceries'>Groceries</option>
+                    <option value='medical'>Medical</option>
+                    <option value='outside food'>Outside Food</option>
+                    <option value='shopping'>Shopping</option>
+                    <option value='insurance'>Insurance</option>
+                    <option value='child education'>Child Education</option>
+                  
+                    <option value='miscellaneous'>Miscellaneous</option>
+                   </select><br><br>
+                   <label>Amount</label><br><br>
+                   <input name='amount' type=number min=0><br><br><br><br><br>
+                    <div class="footer">
+                        <p><button>Submit</button></p>
+                    </div>
+                </form>
+            </div>
+            </div>
+
+                </body>
+                </html>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    menu_ = document.getElementById('menu-icon')
+    nav_ = document.getElementById('menu-bar')
+    function open_(){
+        menu_.style.display='none'
+        nav_.style.display='inline'
+    }
+    function close_(){
+        menu_.style.display='block'
+        nav_.style.display='none'
+    }
+    
+</script>
+</html>

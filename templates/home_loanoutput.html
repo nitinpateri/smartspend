@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
+    <title>Home Loan Calculator Output</title>
+    <style>
+        #form input {
+            right: 0%;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div id="side-menu">
+            <div id="logo-menu"><h1>SmartSpend</h1><h2>Money Management</h2></div>
+            <ul><li><a href="/" title="Home"><pre><img src="../static/images/home.png" alt=""> Home</pre></a></li></ul>
+            <ul><li><a href="" title="Expense Tracker"><pre><img src="../static/images/expenses.png" alt=""> Expenses Tracker</pre></a></li></ul>
+            <ul><li id="active"><a href="" title="Financial Calculator"><pre><img src="../static/images/business.png" alt=""> Financial Calculators</pre></a></li></ul>
+            <ul><li><a href="" title="Investment Options"><pre><img src="../static/images/piggy.png" alt=""> Saving Schemes</pre></a></li></ul>
+            <ul><li><a href="" title="Profile"><pre><img src="../static/images/account.png" alt=""> Profile</pre></a></li></ul>
+        </div>
+        <div id="logo-menu"><h1>SmartSpend</h1><h2>Money Management</h2></div>
+        <div id="events">
+            <h1>Home Loan Calculator Output</h1>
+            <div id="form">
+                <table>
+                    <tr>
+                        <th>Cost of Property</th>
+                        <td>{{data.cost_of_property}}</td>
+                    </tr>
+                    <tr>
+                        <th>Down Payment</th>
+                        <td>{{data.down_payment}}</td>
+                    </tr>
+                    <tr>
+                        <th>Loan Amount</th>
+                        <td>{{data.loan_amount}}</td>
+                    </tr>
+                    <tr>
+                        <th>Annual Interest Rate</th>
+                        <td>{{data.annual_interest_rate}}%</td>
+                    </tr>
+                    <tr>
+                        <th>Tenure</th>
+                        <td>{{data.tenure_years}} years</td>
+                    </tr>
+                    <tr>
+                        <th>Cost of Registration</th>
+                        <td>{{data.cost_of_registration}}</td>
+                    </tr>
+                    <tr>
+                        <th>Home Loan EMI</th>
+                        <td>₹{{data.EMI}}</td>
+                    </tr>
+                    <tr>
+                        <th>Total Liquid Assets</th>
+                        <td>₹{{data.total_liquid_assets}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

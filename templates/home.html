@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
+    <title>Events</title>
+    <style>
+        #form input{
+            right:0%;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div id="side-menu">
+            <div id="logo-menu"><h1>SmartSpend</h1><h2>Money Management</h2></div>
+            <ul id=active><li ><a  href="/{{data[-1]}}/home" title="Home"><pre><img src="../static/images/home.png" alt=""> Home</pre></a></li></ul>
+        <ul><li ><a href="/{{data[-1]}}/expense-tracker" title='Expense Tracker'> <pre><img src="../static/images/expenses.png" alt=""> Expenses Tracker</pre></a></li></ul>
+        <ul><li ><a href="/{{data[-1]}}/finanial-calculator" title="Financial Calculator"><pre><img src="../static/images/business.png" alt=""> Financial Calculators</pre></a></li></ul>                
+        <ul><li><a href="" title="Investment options"><pre><img src="../static/images/piggy.png" alt=""> Saving Schemes</pre></a></li></ul>
+        <ul><li ><a href="" title="Profile"><pre><img src="../static/images/account.png" alt=""> Profile</pre></a></li></ul>
+        </div>
+        
+    </section>
+    <div id="why">
+        <h1>Hello {{Name}}, Welcome Back!</h1 >
+            <div class="services">
+                <div class="row" style="width:500px">
+                    <h1>Ideal way of spending money: </h1><canvas id="myChart" ></canvas></a></p></div>
+                <div class=row>
+                    <h1>Recent Transactions: </h1> 
+                    <button id=add>Add</button>
+                    <!--<p>You don't have any<br>
+                    <a href='create-expense'><button>Create one</button></a></p>-->
+                    <h3><pre>Purpose      Amount</pre></h3>
+                    <a href='create-expense'><button>View more</button></a>
+                </div>
+                <div class="row"><h1>Financial Calculators: </h1><pre>Tax Calculator</pre><pre>Affordability Calculator</pre><br><br><a href='create-expense'><button>Calculate</button></a></p></div>
+                <div class="row"><h1>Saving Schemes: </h1><h3><pre>Pension Schemes</pre><pre>Equity Investment</pre></h3><br>
+                    <a href='create-expense'><button>View more</button></a>
+                </div>
+            </div>
+            
+        </div>
+    
+</body>
+<script>
+    const xValues = ["Necessities", "Personal expenses", "Savings"];
+    const yValues = [50, 25, 25];
+    const barColors = [
+      "#b91d47",
+      "#00aba9",
+      "#2b5797",
+      "#e8c3b9",
+      "#1e7145"
+    ];
+    
+    new Chart("myChart", {
+      type: "doughnut",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+        }
+      }
+    });
+    </script>
+</html>
