@@ -25,3 +25,17 @@ Various Financial Calculators
 ![image](https://github.com/user-attachments/assets/6fe6095e-ebd1-4206-99e5-fd134ca79d23)
 
 ![image](https://github.com/user-attachments/assets/635c384a-ec2d-4a04-b76e-0e1d0160c8ce)
+
+Tax Calculator calculates and displays the taxable amount after all exemptions under various sections of the Income Tax Act.'
+
+<img width="715" alt="image" src="https://github.com/user-attachments/assets/898e61bd-e26f-4de0-9460-2826dd91870a">
+
+It displays the tax to be paid and the exempted amount.
+
+<img width="703" alt="image" src="https://github.com/user-attachments/assets/20247081-ea7b-431c-b5fb-5d6506d2f30f">
+
+The affordability calculator calculates the affordability of vehicle or house loans based on the savings, tenure of the loan & total annual income.
+
+Children's Future Planning calculator plans for future expenses such as education and marriage, considering the inflation rate and expected returns.
+
+The SIP calculator calculates the future corpus of the Systematic Investment Plan [SIP] based on monthly investment, investment period , and expected CAGR and corpus created at the time of redemption.
