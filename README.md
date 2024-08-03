@@ -1,4 +1,8 @@
-Refer to <a href='https://github.com/nitinpateri/smartspend/blob/main/demo.mp4'>Demo.mp4</a> for video presentation.
+
+
+
+https://github.com/user-attachments/assets/93473831-6a94-424d-9e5d-6195b6144b07
+
 
 
 SMART SPEND is a Flask-based web application that assists users in tracking their expenses based on their income and managing their finances effectively.
